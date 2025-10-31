@@ -1,0 +1,4 @@
+prompt_id,prompt_text,baseline_output,personal_output,rater1_score,rater2_score,rater3_score,rater4_score,rater5_score,rater6_score,rater7_score,rater8_score,rater9_score,rater10_score
+1,"How are you today?","I'm fine, thank you.","Hey! Doing great, thanks for checking.","","","","","","","","",""
+2,"What do you think about the meeting?","It was okay.","Honestly, it felt a bit long but productive.","","","","","","","","",""
+3,"Happy birthday!","Thanks a lot!","Aww thank you! Appreciate it :)","","","","","","","","",""
