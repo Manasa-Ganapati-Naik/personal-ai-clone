@@ -1,0 +1,8 @@
+CONSENT FORM — Personal AI Clone (Manasa Ganapati Naik)
+Purpose: To build a model that learns the signatory's communication style for research and demonstration.
+Data requested: [ ] SMS  [ ] Emails  [ ] Chat logs  [ ] Voice notes (no voice for Sprint 1)
+Use: Model training, analysis, demo; no public release of raw data.
+Retention: Data will be stored securely and can be deleted upon request.
+Rights: You have the right to withdraw consent and request deletion.
+Signature: ____________________   Date: __ / __ / 2025
+Contact: manasa.email@example.com
