@@ -78,3 +78,16 @@ with open("data/processed/user_corpus.jsonl", "w", encoding="utf8") as f:
 with open("data/processed/user_corpus_val.jsonl", "w", encoding="utf8") as f:
     for ex in val:
         f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+
+import json
+import numpy as np
+from transformers import AutoTokenizer
+
+# Load training dataset
+with open("data/processed/user_corpus.jsonl", "r", encoding="utf8") as f:
+    train_lines = [json.loads(l) for l in f]
+
+# Load validation dataset (optional)
+with open("data/processed/user_corpus_val.jsonl", "r", encoding="utf8") as f:
+    val_lines = [json.loads(l) for l in f]
