@@ -11,7 +11,6 @@ for fname in files:
     print(f"--- {fname} ---")
     print(lines[:5])
 
-
 from html import unescape
 import re
 
@@ -51,12 +50,22 @@ raw_files = os.listdir("data/raw")  # only approved files here
 for fname in raw_files:
     processed += process_file(os.path.join("data/raw", fname))
 
+# Example for 2-line dialogues
+train_examples = []
+for ex in processed:
+    text = ex["text"]
+    # assuming delimiter "->" between prompt and response
+    if "->" in text:
+        prompt, response = text.split("->", 1)
+        train_examples.append({"prompt": prompt.strip(), "response": response.strip()})
+
 import random
 
 random.shuffle(processed)
 n = len(processed)
 train = processed[:int(n*0.95)]
 val = processed[int(n*0.95):]
+test = train_examples[:1000]  # first 1000 examples for testing
 
 os.makedirs("data/processed", exist_ok=True)
 
