@@ -15,7 +15,10 @@
 - Max token length: 256
 
 ## Loss Graphs
-Loss graph not available.
+
+![Training Loss](train_loss_plot.png)
+
+
 
 ## Sample Inference
 **Prompt 1:** Hey, are we still meeting tomorrow?
