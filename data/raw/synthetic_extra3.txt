@@ -1,0 +1,118 @@
+[Dialogue 1]  
+Alice: Hey, did you finish the report for the client?  
+Bob: Almost! Just finalizing the graphs.  
+Alice: Great, can you send it to me once done?  
+Bob: Sure, will do in the next 30 minutes.  
+
+[Dialogue 2]  
+Customer: Hi, I can’t access my account after the update.  
+Support: I’m sorry to hear that! Are you getting any error messages?  
+Customer: Yes, it says “Session expired” repeatedly.  
+Support: Thanks for letting me know. Let’s try resetting your password and logging in again.  
+
+[Dialogue 3]  
+Friend 1: Are we still meeting for lunch tomorrow?  
+Friend 2: Absolutely! I booked the table at 12:30 PM.  
+Friend 1: Perfect, can’t wait to catch up.  
+Friend 2: Same here!  
+
+[Dialogue 4]  
+Team Lead: Reminder, the presentation is scheduled for 3 PM.  
+Team Member: Thanks for the heads-up! I’m just finishing my slides.  
+Team Lead: Perfect, please make sure all charts are updated before the meeting.  
+
+[Dialogue 5]  
+Jane: Hey, have you tried the new café downtown?  
+Emma: Not yet, but I’ve heard it’s great.  
+Jane: We should go this weekend and try their pastries.  
+Emma: Sounds like a plan!  
+
+[Dialogue 6]  
+Customer: My order arrived damaged.  
+Support: I apologize for the inconvenience. Can you send a photo of the item?  
+Customer: Sure, sending it now.  
+Support: Thank you! We’ll replace it immediately.  
+
+[Dialogue 7]  
+Tom: Are we still on for the hiking trip on Saturday?  
+Sophie: Yes! I’m so excited. What time should we leave?  
+Tom: How about 7 AM to catch the sunrise?  
+Sophie: Perfect! I’ll bring coffee and snacks.  
+
+[Dialogue 8]  
+Alex: I finished the coding task you assigned.  
+Jordan: Awesome! Did you encounter any issues?  
+Alex: Just a small bug in the API call, but it’s fixed now.  
+Jordan: Great job! Let’s merge it to the main branch.  
+
+[Dialogue 9]  
+Friend 1: Did you watch the new movie last night?  
+Friend 2: Yes! It was amazing.  
+Friend 1: I loved the plot twist at the end.  
+Friend 2: Me too! Can’t wait to discuss it with everyone on Friday.  
+
+[Dialogue 10]  
+Customer: I’m having trouble connecting my printer.  
+Support: Let’s troubleshoot it together. What model is it?  
+Customer: It’s the HP LaserJet Pro MFP.  
+Support: Great, I’ll guide you through the setup step by step.  
+
+[Dialogue 11]  
+Alice: Can you help me with the presentation design?  
+Bob: Sure, do you have any ideas on colors or layout?  
+Alice: I was thinking something bright and minimalistic.  
+Bob: Perfect, I’ll mock up a few slides and send them over.  
+
+[Dialogue 12]  
+Friend 1: Are we still doing a virtual game night tonight?  
+Friend 2: Yes! I’ll set up the game server.  
+Friend 1: Awesome! I’ll grab some snacks and drinks.  
+Friend 2: Can’t wait to start at 8 PM.  
+
+[Dialogue 13]  
+Customer: My shipment is delayed.  
+Support: I apologize for the delay. The courier informed me it will arrive by tomorrow afternoon.  
+Customer: Thanks for the update!  
+Support: You’re welcome! Let me know if you need further assistance.  
+
+[Dialogue 14]  
+Jane: I baked a chocolate cake today! 🍰  
+Emma: Yum! Can you share the recipe?  
+Jane: Of course! I’ll text it to you.  
+Emma: Can’t wait to try it this weekend.  
+
+[Dialogue 15]  
+Tom: Did you complete the task I assigned yesterday?  
+Sophie: Yes, I finished it and uploaded the report.  
+Tom: Excellent! Thanks for staying on top of it.  
+Sophie: Happy to help!  
+
+[Dialogue 16]  
+Alex: I tried the new smoothie recipe, it’s delicious!  
+Jordan: Really? I’ll try it too.  
+Alex: You should! I added a little spinach, still tastes great.  
+Jordan: Sounds healthy and yummy!  
+
+[Dialogue 17]  
+Friend 1: Are we meeting for dinner tonight?  
+Friend 2: Yes, 7 PM at the Italian restaurant.  
+Friend 1: Perfect! I’ll see you there.  
+Friend 2: Can’t wait!  
+
+[Dialogue 18]  
+Customer: My app keeps crashing when I open it.  
+Support: I’m sorry! Can you tell me which version you are using?  
+Customer: The latest update on iOS 17.  
+Support: Thanks! We’ll send a patch today to fix this.  
+
+[Dialogue 19]  
+Alice: I completed the coding module today.  
+Bob: That’s great! Did you run all the tests?  
+Alice: Yes, everything passed successfully.  
+Bob: Perfect, let’s proceed to the next module.  
+
+[Dialogue 20]  
+Friend 1: Are you free for a coffee break?  
+Friend 2: Sure, let’s meet at the café near the office.  
+Friend 1: Great! I’ll be there in 10 minutes.  
+Friend 2: See you soon!  

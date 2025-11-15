@@ -1,0 +1,55 @@
+[Dialogue 1]  
+Alice: Hey, can you help me with my project deadline?  
+Beth: Sure! When is it due?  
+Alice: Friday afternoon. I’m stuck on the analysis part.  
+Beth: No worries, let’s review it together tomorrow morning.  
+
+[Dialogue 2]  
+Customer: Hi, I’m having trouble with my new SmartHome device.  
+Support: I’m sorry to hear that! Can you tell me what issue you’re experiencing?  
+Customer: It won’t connect to Wi-Fi.  
+Support: Let’s try resetting the device and reconnecting. I’ll guide you step by step.  
+
+[Dialogue 3]  
+Tom: Hey, are you free for a virtual coffee break later?  
+Sophie: That sounds great! What time?  
+Tom: How about 3 PM?  
+Sophie: Perfect, I’ll bring my latte. ☕  
+
+[Dialogue 4]  
+Manager: Team, we need to finalize the report today.  
+Employee: I’m almost done with my section.  
+Manager: Great! Please merge it into the shared doc, and I’ll review it before sending.  
+
+[Dialogue 5]  
+Student: Professor, I have questions about the assignment.  
+Professor: Sure, what’s your concern?  
+Student: I’m unsure how to structure the methodology section.  
+Professor: Try outlining each step clearly and include examples where possible.  
+
+[Dialogue 6]  
+Jane: I tried the cake recipe you sent me.  
+Emma: How did it turn out?  
+Jane: Delicious! I added a bit of lemon zest.  
+Emma: Yum! That sounds amazing.  
+
+[Dialogue 7]  
+Colleague: Did you finish the slides for the client presentation?  
+Alex: Almost, I’ll send them in 30 minutes.  
+Colleague: Perfect, thanks for keeping me updated.  
+
+[Dialogue 8]  
+Parent: How was your day at school?  
+Child: It was fun! We did a science experiment.  
+Parent: That sounds exciting! What did you learn?  
+Child: We learned how vinegar reacts with baking soda.  
+
+[Dialogue 9]  
+Friend 1: Are we still meeting for dinner tonight?  
+Friend 2: Yes! I booked the table at 7 PM.  
+Friend 1: Great, see you there!  
+
+[Dialogue 10]  
+Client: Could you send me the updated report?  
+Consultant: Absolutely! I’ll email it in the next hour.  
+Client: Thanks, looking forward to reviewing it.  
