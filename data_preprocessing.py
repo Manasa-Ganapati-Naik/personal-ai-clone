@@ -80,14 +80,34 @@ with open("data/processed/user_corpus_val.jsonl", "w", encoding="utf8") as f:
         f.write(json.dumps(ex, ensure_ascii=False) + "\n")
 
 
-import json
+
+
+
+# ----- Day D: Tokenization & Dataset Stats -----
 import numpy as np
 from transformers import AutoTokenizer
+import json
 
-# Load training dataset
+# Initialize tokenizer
+tokenizer = AutoTokenizer.from_pretrained("gpt2")
+
+# Load processed dataset
 with open("data/processed/user_corpus.jsonl", "r", encoding="utf8") as f:
     train_lines = [json.loads(l) for l in f]
 
-# Load validation dataset (optional)
-with open("data/processed/user_corpus_val.jsonl", "r", encoding="utf8") as f:
-    val_lines = [json.loads(l) for l in f]
+# Optional: small sample for quick inspection
+sample_texts = [l["text"] for l in train_lines[:200]]
+
+# Compute token lengths
+toklens = [len(tokenizer(t).input_ids) for t in sample_texts]
+
+# Dataset stats
+print("Total examples:", len(train_lines))
+print("Sample size (first 200 examples) - Avg tokens:", np.mean(toklens))
+print("Sample size (first 200 examples) - Median tokens:", np.median(toklens))
+print("Max tokens in sample:", np.max(toklens))
+print("Min tokens in sample:", np.min(toklens))
+
+# Optional: check if concatenation is needed
+if np.mean(toklens) < 20:
+    print("Average tokens are small (<20). Consider concatenating multiple messages per example.")
