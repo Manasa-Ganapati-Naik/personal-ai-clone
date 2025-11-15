@@ -29,3 +29,9 @@ pip install -r backend/requirements.txt
 
 uvicorn backend.app:app --reload
 
+## Sprint 2 Model Approach
+Chosen technique: LoRA-based fine-tuning (due to small dataset)
+Tokenizer: GPT-2 compatible tokenizer
+Goals: Achieve personalized text generation by Nov 14, 2025
+
+
