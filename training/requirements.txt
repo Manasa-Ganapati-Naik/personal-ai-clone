@@ -1,0 +1,7 @@
+transformers>=4.30
+datasets
+torch>=1.13
+accelerate
+peft
+bitsandbytes       
+optimum            

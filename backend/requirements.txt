@@ -6,3 +6,14 @@ datasets
 python-dotenv
 cryptography
 pandas
+fastapi
+uvicorn
+transformers>=4.30
+datasets
+torch>=1.13
+sentence-transformers
+accelerate
+peft
+bitsandbytes       
+optimum            
+python-dotenv
