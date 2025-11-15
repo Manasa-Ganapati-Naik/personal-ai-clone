@@ -12,7 +12,7 @@
   "ensure_weight_tying": false,
   "eva_config": null,
   "exclude_modules": null,
-  "fan_in_fan_out": false,
+  "fan_in_fan_out": true,
   "inference_mode": true,
   "init_lora_weights": true,
   "layer_replication": null,
@@ -32,8 +32,8 @@
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
-    "c_proj",
-    "c_attn"
+    "c_attn",
+    "c_proj"
   ],
   "target_parameters": null,
   "task_type": null,
