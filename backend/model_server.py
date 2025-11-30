@@ -6,12 +6,21 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import torch
 from dotenv import load_dotenv
-from .safety import safe_generate
+from backend.safety import safe_generate
+from fastapi.middleware.cors import CORSMiddleware
 
 
 load_dotenv()
 
 app = FastAPI(title="User Clone Model Server")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # For development only; allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Configuration (can override with env vars)
 MODEL_DIR = os.getenv("MODEL_DIR", "models/user_clone")
