@@ -6,6 +6,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import torch
 from dotenv import load_dotenv
+from .safety import safe_generate
+
 
 load_dotenv()
 
@@ -18,6 +20,12 @@ MAX_ALLOWED_LENGTH = int(os.getenv("MAX_ALLOWED_LENGTH", "512"))
 
 # Device
 device = "cuda" if torch.cuda.is_available() else "cpu"
+
+def generate_from_model(prompt):
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    out = model.generate(**inputs, max_new_tokens=100, temperature=0.8)
+    return tokenizer.decode(out[0], skip_special_tokens=True)
+
 
 # Load tokenizer
 # Prefer loading tokenizer from MODEL_DIR (if saved there), otherwise from base
@@ -62,3 +70,7 @@ def generate(req: GenIn):
         )
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return {"generated_text": text}
+
+@app.post("/generate")
+def generate(req: GenIn):
+    return {"generated_text": safe_generate(generate_from_model, req.prompt)}
