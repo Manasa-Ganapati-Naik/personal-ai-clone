@@ -29,9 +29,47 @@ pip install -r backend/requirements.txt
 
 uvicorn backend.app:app --reload
 
-## Sprint 2 Model Approach
-Chosen technique: LoRA-based fine-tuning (due to small dataset)
-Tokenizer: GPT-2 compatible tokenizer
-Goals: Achieve personalized text generation by Nov 14, 2025
+Personal AI Clone — Sprint 2 Summary
+
+Key Steps & Files
+1. Data Preparation
+Cleaned, normalized, and split user corpus into train/validation sets.
+
+Files: data/processed/user_corpus.jsonl, data/processed/user_corpus_val.jsonl, scripts/preprocess.py, notebooks/data_preprocessing.ipynb
+
+2. Tokenization & Stats
+Tokenized dataset, inspected example count, average tokens, and vocab issues.
+
+Files: notebooks/data_preprocessing.ipynb
+
+3. Training Setup
+Fine-tuning approach: LoRA + 8-bit (small dataset)
+
+Files: training/train.py
+
+4. Training Run
+Short proof-of-concept run to validate pipeline
+
+Saved logs and loss plots
+Files: logs/train_run_YYYYMMDD.txt, docs/loss_plots.png
+
+5. Inference API
+FastAPI server exposing /generate
+Tested with demo client
+Local URL: Swagger Docs
+
+Files: backend/model_server.py, demo/generate_sample.py
+
+6. Frontend Demo
+Simple UI to send prompts and display outputs
+Local URL: Demo UI
+
+Files: frontend/ui.html
+
+7. Safety & Guardrails
+Toxicity filtering and human-in-the-loop
+Logging of prompts and outputs securely
+
+Files: backend/safety.py, updates in backend/model_server.py
 
 
