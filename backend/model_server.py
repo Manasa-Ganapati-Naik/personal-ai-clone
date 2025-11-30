@@ -83,3 +83,16 @@ def generate(req: GenIn):
 @app.post("/generate")
 def generate(req: GenIn):
     return {"generated_text": safe_generate(generate_from_model, req.prompt)}
+
+from backend.safety import safe_generate
+
+def generate(req: GenIn):
+    # define wrapper function for model generation
+    def model_call(p):
+        inputs = tokenizer(p, return_tensors="pt").to(model.device)
+        out = model.generate(**inputs, max_new_tokens=req.max_length, temperature=req.temperature)
+        return tokenizer.decode(out[0], skip_special_tokens=True)
+
+    # safe generation
+    safe_text = safe_generate(req.prompt, model_call)
+    return {"generated_text": safe_text}

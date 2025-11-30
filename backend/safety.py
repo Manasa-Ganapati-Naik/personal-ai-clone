@@ -43,3 +43,27 @@ def safe_generate(generate_func, prompt):
 
     return safe_text
 
+from detoxify import Detoxify
+
+# Initialize detoxify model
+detox = Detoxify('original')
+
+def safe_generate(prompt, generate_from_model):
+    """
+    Generates text using the model and filters unsafe outputs.
+
+    Args:
+        prompt (str): User input prompt
+        generate_from_model (function): Function that calls your trained model
+
+    Returns:
+        str: Safe generated text or blocked message
+    """
+    text = generate_from_model(prompt)
+    tox = detox.predict(text)
+
+    # Block or replace toxic outputs
+    if tox['toxicity'] > 0.6:
+        return "[Generation blocked due to toxicity]"
+
+    return text
