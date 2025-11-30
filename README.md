@@ -29,7 +29,7 @@ pip install -r backend/requirements.txt
 
 uvicorn backend.app:app --reload
 
-Personal AI Clone — Sprint 2 Summary
+# Personal AI Clone — Sprint 2 Summary
 
 Key Steps & Files
 1. Data Preparation
