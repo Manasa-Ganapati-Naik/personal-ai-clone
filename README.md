@@ -31,45 +31,53 @@ uvicorn backend.app:app --reload
 
 # Personal AI Clone — Sprint 2 Summary
 
-Key Steps & Files
-1. Data Preparation
-Cleaned, normalized, and split user corpus into train/validation sets.
 
-Files: data/processed/user_corpus.jsonl, data/processed/user_corpus_val.jsonl, scripts/preprocess.py, notebooks/data_preprocessing.ipynb
+## Overview
+This sprint focused on fine-tuning a personalized AI model, building a minimal inference API, adding a demo frontend, implementing basic safety filters, and documenting the workflow.
 
-2. Tokenization & Stats
-Tokenized dataset, inspected example count, average tokens, and vocab issues.
+---
 
-Files: notebooks/data_preprocessing.ipynb
+## Key Tasks & Workflow
 
-3. Training Setup
-Fine-tuning approach: LoRA + 8-bit (small dataset)
+### 1. Dataset Preparation
+- Cleaned and preprocessed user text data.
+- Created JSONL training and validation sets:
+  - `data/processed/user_corpus.jsonl`
+  - `data/processed/user_corpus_val.jsonl`
+- Tokenized dataset and inspected statistics.
 
-Files: training/train.py
+**Files:**
+- `scripts/preprocess.py`
+- `notebooks/data_preprocessing.ipynb`
+- `data/processed/*.jsonl`
 
-4. Training Run
-Short proof-of-concept run to validate pipeline
+---
 
-Saved logs and loss plots
-Files: logs/train_run_YYYYMMDD.txt, docs/loss_plots.png
+### 2. Model Training
+- Fine-tuned GPT-2 using LoRA adapters (PEFT).
+- Small proof-of-concept run to validate training pipeline.
+- Saved model and adapters to `models/user_clone/`.
 
-5. Inference API
-FastAPI server exposing /generate
-Tested with demo client
-Local URL: Swagger Docs
+**Files:**
+- `training/train.py`
+- `logs/train_run_YYYYMMDD.txt`
+- `docs/loss_plots.png`
 
-Files: backend/model_server.py, demo/generate_sample.py
+---
 
-6. Frontend Demo
-Simple UI to send prompts and display outputs
-Local URL: Demo UI
+### 3. Model Evaluation
+- Documented dataset size, hyperparameters, training/validation loss.
+- Generated inference examples and computed metrics:
+  - Perplexity
+  - Embedding similarity (SBERT)
 
-Files: frontend/ui.html
 
-7. Safety & Guardrails
-Toxicity filtering and human-in-the-loop
-Logging of prompts and outputs securely
+**Files:**
+- `docs/training_report.md`
 
-Files: backend/safety.py, updates in backend/model_server.py
+---
+
+### 4. Model Serving (FastAPI)
+- Created endpoint `/generate` for infere
 
 
