@@ -1,4 +1,4 @@
-# Personal AI Clone — Sprint 1 Complete
+# Personal AI Clone — Sprint 1 
 
 ## Overview
 Personal AI Clone is a personalized conversational text generator that adapts to a user's unique style, providing draft messages and suggestions.
