@@ -29,7 +29,7 @@ pip install -r backend/requirements.txt
 
 uvicorn backend.app:app --reload
 
-# Personal AI Clone — Sprint 2 Summary
+# Personal AI Clone — Sprint 2 & 3 Summary
 
 
 ## Overview
@@ -51,7 +51,7 @@ This sprint focused on fine-tuning a personalized AI model, building a minimal i
 - `notebooks/data_preprocessing.ipynb`
 - `data/processed/*.jsonl`
 
----
+
 
 ### 2. Model Training
 - Fine-tuned GPT-2 using LoRA adapters (PEFT).
