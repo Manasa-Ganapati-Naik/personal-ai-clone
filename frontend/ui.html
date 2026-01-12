@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AI Text Generator</title>
+  <title>Personal AI Clone</title>
 </head>
 <body>
-    <h2>AI Text Generator</h2>
-    <textarea id="prompt" rows="4" cols="50" placeholder="Type your prompt here..."></textarea><br>
-    <button onclick="generateText()">Generate</button>
-    <pre id="output"></pre>
 
-    <!-- Step 1: JavaScript goes here -->
-    <script>
+  <h2>Personal AI Clone</h2>
+
+  <input
+    type="text"
+    id="prompt"
+    placeholder="Type something..."
+  />
+
+  <br><br>
+
+  <button onclick="generateText()">Generate</button>
+
+  <br><br>
+
+  <h3>Output:</h3>
+  <p id="output"></p>
+
+  <script>
     async function generateText() {
-        const prompt = document.getElementById("prompt").value;
+      console.log("Button clicked");
 
-        try {
-            const response = await fetch("http://127.0.0.1:8000/generate", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ prompt: prompt, max_length: 80 })
-            });
+      const prompt = document.getElementById("prompt").value;
 
-            const data = await response.json();
-            document.getElementById("output").textContent = data.generated_text;
+      try {
+        const response = await fetch("http://127.0.0.1:8000/generate", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ prompt })
+        });
 
-        } catch (err) {
-            console.error("Error fetching:", err);
-            document.getElementById("output").textContent = "Failed to fetch response.";
-        }
+        const data = await response.json();
+        console.log("Backend response:", data);
+
+        document.getElementById("output").innerText =
+          data.generated_output;
+
+      } catch (error) {
+        console.error("Fetch failed:", error);
+        alert("Failed to fetch from backend");
+      }
     }
-    </script>
+  </script>
+
 </body>
 </html>
